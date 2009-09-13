@@ -7,17 +7,22 @@
     <packaging>pom</packaging>
     <name>Base POM for Mobile Libraries</name>
     <url>http://3aspen.com/solutions</url>
-    <properties>
-        <scm.root>scm:svn:svn+ssh://svn.broudy.net/svn-projects/broudy/mobile</scm.root>
-    </properties>
-    <scm>
-        <developerConnection>${scm.root}/${project.artifactId}/trunk</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
     <organization>
         <name>Three Aspen Software</name>
         <url>http://3aspen.com</url>
     </organization>
+    <scm>
+        <developerConnection>scm:svn:svn+ssh://svn.broudy.net/svn-projects/broudy/mobile/mobile-lib-base/trunk</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>3as-internal-repo</id>
+            <name>Three Aspen Internal Repo</name>
+            <url>scp://svn.broudy.net/maven-internal/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
     <profiles>
         <profile>
             <id>android-1.1</id>
