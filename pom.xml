@@ -16,7 +16,7 @@
     </scm>
     <distributionManagement>
         <repository>
-            <id>3as-internal-repo</id>
+            <id>3as-internal</id>
             <name>Three Aspen Internal Repo</name>
             <url>scp://svn.broudy.net/maven-internal/</url>
             <uniqueVersion>false</uniqueVersion>
@@ -28,11 +28,16 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-compiler-plugin</artifactId>
                         <configuration>
                             <source>1.5</source>
                             <target>1.5</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <configuration>
+                            <arguments>-Pandroid-1.1</arguments>
                         </configuration>
                     </plugin>
                     <plugin>
@@ -75,6 +80,12 @@
                         <configuration>
                             <source>1.3</source>
                             <target>1.1</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <configuration>
+                            <arguments>-Pblackberry-4.2.1</arguments>
                         </configuration>
                     </plugin>
                     <plugin>
