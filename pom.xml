@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.threeaspen</groupId>
     <artifactId>mobile-lib-base</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
     <packaging>pom</packaging>
     <name>Base POM for Mobile Libraries</name>
     <url>http://3aspen.com/solutions</url>
@@ -12,7 +12,7 @@
         <url>http://3aspen.com</url>
     </organization>
     <scm>
-        <developerConnection>scm:svn:svn+ssh://svn.broudy.net/svn-projects/broudy/mobile/mobile-lib-base/trunk</developerConnection>
+        <developerConnection>scm:svn:svn+ssh://svn.broudy.net/svn-projects/broudy/mobile/mobile-lib-base/tags/mobile-lib-base-1.2</developerConnection>
     </scm>
     <distributionManagement>
         <repository>
