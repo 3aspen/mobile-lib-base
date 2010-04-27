@@ -37,7 +37,7 @@
                     <plugin>
                         <artifactId>maven-release-plugin</artifactId>
                         <configuration>
-                            <arguments>-Pandroid-1.1</arguments>
+                            <arguments>-Pandroid-1.5</arguments>
                         </configuration>
                     </plugin>
                     <plugin>
@@ -49,7 +49,7 @@
                                     <goal>jar</goal>
                                 </goals>
                                 <configuration>
-                                    <classifier>android-1.1</classifier>
+                                    <classifier>android-1.5</classifier>
                                 </configuration>
                             </execution>
                         </executions>
